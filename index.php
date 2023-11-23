@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="blue-gradient" >
-
+<html lang="en" class="blue-gradient">
 <head id="includedheader" style="overflow: hidden;">
     <meta charset="UTF-8">
     <title>Dashboard</title>
