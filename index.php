@@ -50,7 +50,6 @@ req.onload = function() {
 
 </body>
 
-
 <div id="includefooter">
 
 <script>
@@ -62,7 +61,6 @@ req.onload = function() {
 
         req.open("get", "./layout/common/html/footer.html", true);
         req.send();
-
 </script>
 </div>
 </html>
