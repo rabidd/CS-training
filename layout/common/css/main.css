@@ -1,79 +1,28 @@
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    margin-top: 75px !important;
-}
 
-.page-footer, .wrapper {
-    margin-top: 35px !important;
-}
-
-#dtOrderExamplerow {
-    margin-top: 45px !important;
-}
-footer.page-footer {
-    min-height: 200px;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    color: #fff;
-}
-table {
-    font-size: 1.9rem !important;
-    font-weight: 300;
-}
-.table td {
-    font-size: 1.9rem !important;
-}
-
-.table-heading {
-    font-size: 1.9rem !important;
-}
-
-.page-footer {
-    font-size: 1.9rem!important;
-    color: white!important;
-}
-
-div#dtOrderExample_info, div#dtOrderExample_length {
-    display: inline-block;
-}
-
-div#dtOrderExample_paginate, div#dtOrderExample_filter {
-    display: inline-block;
-    float: right;
-}
-
-.wrapper {
-
-    margin: 50 auto;
-}
-
-.page-header h2 {
-    margin-top: 0;
-}
-
-table tr td:last-child a {
-    margin-right: 15px;
-}
-
-
-
-
-
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting:before,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_asc:before,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_asc_disabled:before,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_desc:before,
-table.dataTable thead .sorting_desc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:before {
-    bottom: .5em;
-}
-
-.help-blockP{
+.help-block {
     color: red;
+}
+
+.includednavigation {
+    position: fixed;
+!important;
+    width: 100%;
+!important;
+}
+
+.pad {
+    padding-top: 100px;
+}
+
+.pad3 {
+    padding-top: 25px;
+}
+
+.preload {
+    transition: height 1.66s ease-out;
+}
+
+.table-content a {
+    display: inline-block;
+    padding: 10px;
 }
