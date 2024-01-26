@@ -62,7 +62,6 @@
 </body>
 
 <div id="includefooter">
-
     <script>
         var req = new XMLHttpRequest();
 
@@ -71,7 +70,6 @@
         }
         req.open("get", "./layout/common/html/footer.html", true);
         req.send();
-
     </script>
 </div>
 </html>
