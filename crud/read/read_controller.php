@@ -26,6 +26,7 @@ if (isset($_GET["id"]) && !empty(trim($_GET["id"]))) {
                 $name = $row["name"];
                 $address = $row["address"];
                 $salary = $row["salary"];
+                $date = $row["date"];
             } else {
                 // URL doesn't contain valid id parameter. Redirect to error page
                 header("location: ../../error.php");

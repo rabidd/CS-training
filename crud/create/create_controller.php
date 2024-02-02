@@ -3,8 +3,8 @@
 require_once "../../config.php";
 
 // Define variables and initialize with empty values
-$name = $address = $salary = "";
-$name_err = $address_err = $salary_err = "";
+$name = $address = $salary = $date = "";
+$name_err = $address_err = $salary_err = $date_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -36,19 +36,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $salary = $input_salary;
     }
 
+    // Validate date
+    $input_date = trim($_POST["date"]);
+    if (empty($input_date)) {
+        $date_err = "Please enter the date.";
+    } else {
+        $date = $input_date;
+    }
+
     // Check input errors before inserting in database
-    if (empty($name_err) && empty($address_err) && empty($salary_err)) {
+    if (empty($name_err) && empty($address_err) && empty($salary_err) && empty($date_err)) {
         // Prepare an insert statement
-        $sql = "INSERT INTO employees (name, address, salary) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO employees (name, address, salary, date) VALUES (?, ?, ?, ?)";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sss", $param_name, $param_address, $param_salary);
+            mysqli_stmt_bind_param($stmt, "ssss", $param_name, $param_address, $param_salary, $param_date);
 
             // Set parameters
             $param_name = $name;
             $param_address = $address;
             $param_salary = $salary;
+            $param_date = $date;
+
 
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {

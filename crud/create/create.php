@@ -33,10 +33,11 @@
 <div class="wrapper container">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <div class="page-header">
-                    <h2 style="color: black;">Create Record</h2>
-                </div>
+            <div class="page-header">
+                <h2 style="color: black;">Create Record</h2>
+            </div>
+            <div class="col-md-6">
+
                 <p>Please fill this form and submit to add employee record to the database.</p>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
@@ -54,12 +55,20 @@
                         <input type="text" name="salary" class="form-control" value="<?php echo $salary; ?>">
                         <span class="help-block"><?php echo $salary_err; ?></span>
                     </div>
+                    <div class="form-group <?php echo (!empty($date_err)) ? 'has-error' : ''; ?>">
+                        <label>Start of contract</label>
+                        <input type="date" name="date" class="form-control" value="<?php echo $date; ?>">
+                        <span class="help-block"><?php echo $date_err; ?></span>
+                    </div>
+
+
                     <div style="padding-top: 25px">
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <a href="../../index.php" class="btn btn-default">Cancel</a>
                     </div>
                 </form>
             </div>
+            <div class="col-md-6"> <img src="./../../layout/common/images/360_F_227948015_Yol14oPcY4slU7Rtk3RyOFIJYb9KjXF8.jpg"></div>
         </div>
     </div>
 </div>

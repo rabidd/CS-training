@@ -49,9 +49,13 @@
                     <label>Salary</label>
                     <p class="form-control-static"><?php echo $row["salary"]; ?></p>
                 </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <p class="form-control-static"><?php echo $row["date"]; ?></p>
+                </div>
                 <div>
                     <a href="javascript:history.back()">
-                        <button type="button" class="btn btn-warning" data-mdb-ripple-init>Back</button>
+                        <button type="button" class="btn btn-warning data-mdb-ripple-init">Back</button>
                     </a>
 
                     <?php echo "<a href='../update/update.php?id=" . $row['id'] . "' title='Update Record' ><i class='btn btn-primary'>Update</i></a>"; ?>
