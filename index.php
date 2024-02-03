@@ -47,7 +47,7 @@
 <div class="wrapper container pad">
     <div class="container-fluid">
         <div class="page-header clearfix">
-            <h2 class="pull-left">Employees Details</h2>
+            <h2 class="pull-left">Employees Details test</h2>
         </div>
         <div id='dtOrderExamplerow' class="row">
             <div class="col-md-11">
